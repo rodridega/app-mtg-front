@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+/* Contenedor del tablero */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Estilo de las cartas en el tablero */
+.card {
+  width: 200px;
+  height: 280px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Contenedor de la mano de cartas */
+.hand {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Estilo de las cartas en la mano */
+.hand .card {
+  width: 150px;
+  height: 210px;
+  cursor: grab;
+}
+
+.hand .card:active {
+  cursor: grabbing;
+}
+
+/* Estilos para el drag-and-drop */
+/* Opcional: Si estás usando react-dnd, puedes agregar estilos adicionales */
