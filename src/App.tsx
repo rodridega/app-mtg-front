@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import "./App.css"; // Importa el archivo CSS
 import { Card } from "./types/Card";
 
-const socket = io("http://localhost:3000"); // Conectar al backend
+const socket = io("https://app-mtg-back.onrender.com"); // Conectar al backend
 
 function App() {
   const [board, setBoard] = useState<Card[]>([]); // Estado del tablero
